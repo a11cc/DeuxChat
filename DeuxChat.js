@@ -17,7 +17,5 @@ XMLHttpRequest.prototype.open = function() {
 		this.open("PUT", "https://sendbirdproxy.chat.redditmedia.com/v3/group_channels/sendbird_group_channel_1557514_fe36cb61c0eca903877eafd1778bf0dee8a5ad5b/join");
 		this.setRequestHeader("Session-Key", session);
 		this.send("{\"user_id\":\"" + urlMatch[1] + "\"}");
-		return;
-	}
-	open.apply(this, arguments);
+	} else open.apply(this, arguments);
 }
