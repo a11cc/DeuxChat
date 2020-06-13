@@ -1,3 +1,5 @@
+// Go to https://www.reddit.com/chat and run script, navigate around between a few chats, then refresh.
+
 var setRequestHeader = XMLHttpRequest.prototype.setRequestHeader;
 XMLHttpRequest.prototype.setRequestHeader = function() {
 	if(arguments[0] = "Session-Key") {
